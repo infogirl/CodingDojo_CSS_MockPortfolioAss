@@ -24,6 +24,7 @@
   background: -webkit-radial-gradient(circle, #601390, #400c60, #11051b); /*Safari */
   background: -o-radial-gradient(circle, #601390, #400c60, #11051b); /*Opera*/
   background: -moz-radial-gradient(circle, #601390, #400c60, #11051b); /*Firefox*/
+  border: solid;
 }
 
 #main_image{
@@ -35,8 +36,6 @@
   margin-left: 20px;
 }
 
-
-
 #about_section{
   width: 480px;
   height: 330px;
@@ -44,10 +43,19 @@
   display: inline-block;
   vertical-align: top;
   margin-left: 30px;
+  background: pink; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#fff6f6, #E5CDCA); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, #fff6f6, #E5CDCA); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, #fff6f6, #E5CDCA); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #fff6f6, #E5CDCA); /*Standard*/
 }
 
-#about_section h3{
-  background-color: blue;
+.grey_gradient{
+  background: #696969; /*For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#A9A9A9, #696969, #A9A9A9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#A9A9A9, #696969, #A9A9A9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#A9A9A9, #696969, #A9A9A9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#A9A9A9, #696969, #A9A9A9); /* Standard syntax */
   margin: 0px;
   padding: 6px;
 }
@@ -56,7 +64,66 @@
   margin: 13px;
   font-size: 20px;
 }
+
+#portfolio{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.sample_work h3{
+  color: white;
+}
+
+.sample_work h4{
+  color: white;
+}
+
+.sample_work button{
+  background-color: green;
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+	padding:5px;
+	margin: 10px 0px 5px 70px;
+	font-weight: 900;
+}
+
+.sample_work{
+  display: inline-block;
+  width: 270px;
+  vertical-align: top;
+  margin: 15px;
+  background: pink; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,#fff6f6, #E5CDCA); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, #fff6f6, #E5CDCA); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, #fff6f6, #E5CDCA); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #fff6f6, #E5CDCA); /*Standard*/
+}
+
+.sample_work p{
+  padding: 10px;
+  height: 180px
+}
+
+.sample_work img{
+  width: 270px;
+  height: 200px;
+}
+
 .badges img{
   height: 40px;
   width: 40px;
+  margin: 5px;
+}
+#footer img{
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+}
+
+#footer{
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
 }
